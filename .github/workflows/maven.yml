@@ -136,7 +136,7 @@ jobs:
           #Set artifact name
           name: artifact
           #From this path
-          path: target/cicdemo-0.0.1-SNAPSHOT.jar
+          path: target/cicd-demo-0.0.1-SNAPSHOT.jar
 
   #Deploy's job
   deploy:
@@ -162,4 +162,4 @@ jobs:
           environment_name: Springbootcicddemo-env
           version_label: ${{github.SHA}}
           region: ap-southeast-1
-          deployment_package: cicdemo-0.0.1-SNAPSHOT.jar
+          deployment_package: cicd-demo-0.0.1-SNAPSHOT.jar
