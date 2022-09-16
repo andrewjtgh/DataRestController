@@ -158,8 +158,8 @@ jobs:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           use_existing_version_if_available: true
-          application_name: spring-boot-cicd-demo
-          environment_name: Springbootcicddemo-env-1
+          application_name: cicd-demo
+          environment_name: Cicddemo-env
           version_label: ${{github.SHA}}
           region: ap-southeast-1
           deployment_package: cicd-demo-0.0.1-SNAPSHOT.jar
