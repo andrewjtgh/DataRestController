@@ -100,7 +100,7 @@ jobs:
   #Build's job
   build:
     #Depends on sonar's job
-    needs: code-security
+    needs: sonar
     name: Build
     #Run on Ubuntu using the latest version
     runs-on: ubuntu-latest
@@ -140,7 +140,7 @@ jobs:
           path: target/cicd-demo-0.0.1-SNAPSHOT.jar
 
   code-security:
-    needs: sonar, build
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
