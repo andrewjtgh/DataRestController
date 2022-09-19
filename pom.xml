@@ -66,4 +66,16 @@
 		</plugins>
 	</build>
 
+	<scm>
+        <developerConnection>scm:git:https://github.com/darryl1975/DataRestController.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub</name>
+            <url>https://maven.pkg.github.com/darryl1975/DataRestController</url>
+        </repository>
+    </distributionManagement>
 </project>
